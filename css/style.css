@@ -1,0 +1,13 @@
+.mdx-navbar
+{
+	background-color:#7AB900;
+}
+
+.mdx-footer
+{
+	background-color:#575757;
+}
+
+.dropdown-content li>a, .dropdown-content li>span {
+	color:#7AB900;
+}

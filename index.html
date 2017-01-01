@@ -1,6 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html ng-app='mdx-app'>
 	<head>
-		<title>MARCKDX - Software Developer</title>
+		<title>{{ 'SITE_TITLE' | translate }}</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 		<meta name="viewport" content="width=device-width, initial-scale=1" >
 		<meta name="title" content="MARCKDX - Software Developer" >
@@ -22,24 +23,65 @@
 		<link rev="made" href="mailto:marckdx@outlook.com">
 
 		<link rel="stylesheet" href="css/materialize.min.css">
-		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="stylesheet" href="css/style.css">
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	</head>
 	<body>
 		<nav>
-		    <div class="nav-wrapper">
-		      <a href="https://marckdx.github.io/" class="brand-logo">Logo</a>
+		    <div class="nav-wrapper mdx-navbar">
+		      <a href="https://marckdx.github.io/" class="brand-logo">MDX</a>
 		      <ul id="nav-mobile" class="right hide-on-med-and-down">
-		        <li><a href="sass.html">Sass</a></li>
-		        <li><a href="badges.html">Components</a></li>
-		        <li><a href="collapsible.html">JavaScript</a></li>
+		      	<li><a href="#projects">{{ 'TAB_HOME' | translate }}</a></li>
+		        <li><a href="#projects">{{ 'TAB_PROJECTS' | translate }}</a></li>
+		        <li><a href="#blog">{{ 'TAB_BLOG' | translate }}</a></li>
+		        <li><a href="#about">{{ 'TAB_ABOUT' | translate }}</a></li>
+		        <li><a class="dropdown-button" href="#!" data-activates="dropdownLanguages">{{ 'SITE_CUR_LANG' | translate }}<i class="material-icons right">arrow_drop_down</i></a></li>
+
 		      </ul>
+
+		      <ul id="dropdownLanguages" class="dropdown-content" ng-controller="TranslateController">
+				<li><a ng-click="changeLanguage('en')" translate="BUTTON_TEXT_EN">English</a></li>
+				<li><a ng-click="changeLanguage('pt')" translate="BUTTON_TEXT_PT">Portuguese</a></li>
+				<li><a ng-click="changeLanguage('es')" translate="BUTTON_TEXT_ES">Spanish</a></li>
+			  </ul>
 		    </div>
 		  </nav>
+
+		   <footer class="mdx-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">MarckDX</h5>
+                <p class="grey-text text-lighten-4">{{ 'FOOTER_DESCRIPTION' | translate }}</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#projects">{{ 'TAB_PROJECTS' | translate }}</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#blog">{{ 'TAB_BLOG' | translate }}</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#about">{{ 'TAB_ABOUT' | translate }}</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#contact">{{ 'TAB_CONTACT' | translate }}</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            <p class="grey-text text-lighten-4">© 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </p>
+            </div>
+          </div>
+        </footer>
+
+   
         
 
-
+        <script src="js/jquery-3.1.1.min.js"></script>  
 		<script src="js/materialize.min.js"></script> 
+		<script src="js/angular.min.js"></script> 
+		<script src="js/angular-translate.min.js"></script> 
+		<script src="js/mdx.js"></script> 
 	</body>
 </html>
