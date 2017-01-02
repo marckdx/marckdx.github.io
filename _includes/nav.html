@@ -1,0 +1,19 @@
+<nav id="home">
+		    <div class="nav-wrapper white">
+		      <a href="https://marckdx.github.io/" class="brand-logo">MDX</a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+		      	<li ng-class="{active: activetab == '/'}"><a href="#/home" class="mdx-text-primary">{{ 'TAB_HOME' | translate }}</a></li>
+		        <li ng-class="{active: activetab == '/projects'}"><a href="#/projects" class="mdx-text-primary">{{ 'TAB_PROJECTS' | translate }}</a></li>
+		        <li ng-class="{active: activetab == '/blog'}"><a href="#/blog" class="mdx-text-primary">{{ 'TAB_BLOG' | translate }}</a></li>
+		        <li><a href="#about"  class="mdx-text-primary">{{ 'TAB_ABOUT' | translate }}</a></li>
+		        <li><a class="dropdown-button mdx-text-primary" href="#!" data-activates="dropdownLanguages">{{ 'SITE_CUR_LANG' | translate }}<i class="material-icons right">arrow_drop_down</i></a></li>
+
+		      </ul>
+
+		      <ul id="dropdownLanguages" class="dropdown-content" ng-controller="TranslateController">
+				<li><a ng-click="changeLanguage('en')" translate="BUTTON_TEXT_EN">English</a></li>
+				<li><a ng-click="changeLanguage('pt')" translate="BUTTON_TEXT_PT">Portuguese</a></li>
+				<li><a ng-click="changeLanguage('es')" translate="BUTTON_TEXT_ES">Spanish</a></li>
+			  </ul>
+		    </div>
+		  </nav>
