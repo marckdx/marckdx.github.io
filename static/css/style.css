@@ -18,10 +18,14 @@ body
 	background-color: #438CC7;
 }
 
-.mdx-button-primary:focus, .mdx-button-primary :hover
+.mdx-button-primary:focus, .mdx-button-primary:hover
 {
 	background-color: #438CC7!important;
 }
+
+/*.btn:hover, .btn-large:hover {
+    background-color: #438CC7!important;
+}*/
 
 .mdx-navbar
 {
