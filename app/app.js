@@ -10,10 +10,19 @@ app.config(function($routeProvider, $locationProvider)
       templateUrl : 'app/views/home.html',
       controller     : 'HomeCtrl',
    })
+   .when('/libraries', {
+      templateUrl : 'app/views/libraries.html',
+      controller     : 'LibrariesCtrl',
+   })
 	.otherwise ({ redirectTo: '/' });
 });
 
 app.controller('HomeCtrl', function($rootScope, $location)
+{
+   $rootScope.activetab = $location.path();
+});
+
+app.controller('LibrariesCtrl', function($rootScope, $location)
 {
    $rootScope.activetab = $location.path();
 });

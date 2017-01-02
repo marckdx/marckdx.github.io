@@ -23,7 +23,7 @@
 		<link rev="made" href="mailto:marckdx@outlook.com">
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-		<link rel="stylesheet" href="app/assets/css/style.css">
+		<link rel="stylesheet" href="static/css/style.css">
 
 		<link rel="shortcut icon" type="image/ico" href="favicon.ico">
 
@@ -31,14 +31,14 @@
 	</head>
 	<body>
 		<nav id="home">
-		    <div class="nav-wrapper mdx-navbar">
+		    <div class="nav-wrapper white">
 		      <a href="https://marckdx.github.io/" class="brand-logo">MDX</a>
 		      <ul id="nav-mobile" class="right hide-on-med-and-down">
-		      	<li ng-class="{active: activetab == '/'}"><a href="#/home">{{ 'TAB_HOME' | translate }}</a></li>
-		        <li ng-class="{active: activetab == '/projects'}"><a href="#/projects">{{ 'TAB_PROJECTS' | translate }}</a></li>
-		        <li ng-class="{active: activetab == '/blog'}"><a href="#/blog">{{ 'TAB_BLOG' | translate }}</a></li>
-		        <li><a href="#about">{{ 'TAB_ABOUT' | translate }}</a></li>
-		        <li><a class="dropdown-button" href="#!" data-activates="dropdownLanguages">{{ 'SITE_CUR_LANG' | translate }}<i class="material-icons right">arrow_drop_down</i></a></li>
+		      	<li ng-class="{active: activetab == '/'}"><a href="#/home" class="mdx-text-primary">{{ 'TAB_HOME' | translate }}</a></li>
+		        <li ng-class="{active: activetab == '/projects'}"><a href="#/projects" class="mdx-text-primary">{{ 'TAB_PROJECTS' | translate }}</a></li>
+		        <li ng-class="{active: activetab == '/blog'}"><a href="#/blog" class="mdx-text-primary">{{ 'TAB_BLOG' | translate }}</a></li>
+		        <li><a href="#about"  class="mdx-text-primary">{{ 'TAB_ABOUT' | translate }}</a></li>
+		        <li><a class="dropdown-button mdx-text-primary" href="#!" data-activates="dropdownLanguages">{{ 'SITE_CUR_LANG' | translate }}<i class="material-icons right">arrow_drop_down</i></a></li>
 
 		      </ul>
 
@@ -49,7 +49,20 @@
 			  </ul>
 		    </div>
 		  </nav>
-
+				<div class="section mdx-navbar">
+                     <div class="container">
+                        <div class="row">
+                            <div class="col m12 s12">
+                            <div class="center">
+                                <h1 class="white-text">MarckDX</h1>
+                                <p class="white-text">@marckdx São Paulo, Brazil</p>
+                                <a href="#contact" class="btn waves-effect white grey-text darken-text-2">começar</a>
+                                <a href="#projects" class="btn waves-effect white grey-text darken-text-2">baixar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 		  <div  class="page-header">
 				<div class="container mdx-text-color" id="about">
 		            <div class="row">
@@ -117,11 +130,11 @@
           </div>
         </footer>
 
-        <script src="app/assets/js/jquery-3.1.1.min.js"></script>
+        <script src="static/js/jquery-3.1.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-		<script src="app/assets/js/angular.min.js"></script> 
-		<script src="app/assets/js/angular-translate.min.js"></script> 
-		<script src="app/assets/js/angular-route.min.js"></script>
+		<script src="static/js/angular.min.js"></script> 
+		<script src="static/js/angular-translate.min.js"></script> 
+		<script src="static/js/angular-route.min.js"></script>
 		<script src="app/app.js"></script> 
 	</body>
 </html>
