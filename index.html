@@ -22,21 +22,21 @@
 
 		<link rev="made" href="mailto:marckdx@outlook.com">
 
-		<link rel="stylesheet" href="css/materialize.min.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+		<link rel="stylesheet" href="app/assets/css/style.css">
 
 		<link rel="shortcut icon" type="image/ico" href="favicon.ico">
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	</head>
 	<body>
-		<nav>
+		<nav id="home">
 		    <div class="nav-wrapper mdx-navbar">
 		      <a href="https://marckdx.github.io/" class="brand-logo">MDX</a>
 		      <ul id="nav-mobile" class="right hide-on-med-and-down">
-		      	<li><a href="#projects">{{ 'TAB_HOME' | translate }}</a></li>
-		        <li><a href="#projects">{{ 'TAB_PROJECTS' | translate }}</a></li>
-		        <li><a href="#blog">{{ 'TAB_BLOG' | translate }}</a></li>
+		      	<li ng-class="{active: activetab == '/'}"><a href="#/home">{{ 'TAB_HOME' | translate }}</a></li>
+		        <li ng-class="{active: activetab == '/projects'}"><a href="#/projects">{{ 'TAB_PROJECTS' | translate }}</a></li>
+		        <li ng-class="{active: activetab == '/blog'}"><a href="#/blog">{{ 'TAB_BLOG' | translate }}</a></li>
 		        <li><a href="#about">{{ 'TAB_ABOUT' | translate }}</a></li>
 		        <li><a class="dropdown-button" href="#!" data-activates="dropdownLanguages">{{ 'SITE_CUR_LANG' | translate }}<i class="material-icons right">arrow_drop_down</i></a></li>
 
@@ -50,7 +50,47 @@
 		    </div>
 		  </nav>
 
-		   <footer class="mdx-footer">
+		  <div  class="page-header">
+				<div class="container mdx-text-color" id="about">
+		            <div class="row">
+			            <div class="col l1">
+			              </div>
+		              <div class="col l4 s12">
+		              	<p class="flow-text mdx-text-primary">{{ 'MY_HISTORY' | translate }}</p>
+		              	<p>Software developer in Santos, Brazil. Formed in System Analysys at São Paulo State Tecnological College</p>
+		              	<a class="waves-effect waves-light btn mdx-button-primary" href="#downloadorigin=static/resume.pdf"><i class="material-icons left" download="Marco Aurélio Lima Resume.pdf">description</i>{{ 'DOWNLOAD_RESUME' | translate }}</a>
+		              </div>
+		              <div class="col l2">
+		              </div>
+		              <div class="col l4 s12">
+		              	<p class="flow-text mdx-text-primary">{{ 'PERSONAL_INFO' | translate }}</p>
+
+		              	 <table class="striped">
+					        <tbody>
+					          <tr>
+					            <td>{{ 'NAME' | translate }}</td>
+					            <td>Marco Aurélio Lima</td>
+					          </tr>
+					          <tr>
+					            <td>{{ 'AGE' | translate }}</td>
+					            <td>24 anos</td>
+					          </tr>
+					          <tr>
+					            <td>{{ 'TEL' | translate }}</td>
+					            <td>+55 13 988323087</td>
+					          </tr>
+					          <tr>
+					            <td>{{ 'EMAIL' | translate }}</td>
+					            <td>marckdx@outlook.com</td>
+					          </tr>
+					        </tbody>
+					      </table>
+		              	</div>
+		            </div>
+		        </div>
+		</div>
+
+		  <footer class="mdx-footer">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -70,20 +110,18 @@
           </div>
           <div class="footer-copyright">
             <div class="container">
-            <p class="grey-text text-lighten-4">© 2016 Copyright MarckDX
-            <a class="grey-text text-lighten-4 right" href="#!">Social</a>
+            <p class="grey-text text-lighten-4">© <span class="year"></span> Copyright MarckDX
+            <a class="grey-text text-lighten-4 right" href="feed.xml">Feed RSS</a>
             </p>
             </div>
           </div>
         </footer>
 
-   
-        
-
-        <script src="js/jquery-3.1.1.min.js"></script>  
-		<script src="js/materialize.min.js"></script> 
-		<script src="js/angular.min.js"></script> 
-		<script src="js/angular-translate.min.js"></script> 
-		<script src="js/mdx.js"></script> 
+        <script src="app/assets/js/jquery-3.1.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+		<script src="app/assets/js/angular.min.js"></script> 
+		<script src="app/assets/js/angular-translate.min.js"></script> 
+		<script src="app/assets/js/angular-route.min.js"></script>
+		<script src="app/app.js"></script> 
 	</body>
 </html>
