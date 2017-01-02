@@ -53,7 +53,9 @@ app.config(function($translateProvider) {
     NAME: 'Name',
     AGE: 'Age',
     TEL: 'Phone',
-    EMAIL: 'Email'
+    EMAIL: 'Email',
+
+    LIBRARIES: "Libraries"
 
   })
   .translations('pt', {
@@ -79,7 +81,9 @@ app.config(function($translateProvider) {
     NAME: 'Nome',
     AGE: 'Idade',
     TEL: 'Telefone',
-    EMAIL: 'Email'
+    EMAIL: 'Email',
+
+    LIBRARIES: "Bibliotecas"
 
   }).translations('es', {
     SITE_TITLE: 'MARCKDX - Desarollador de Software',
@@ -104,7 +108,9 @@ app.config(function($translateProvider) {
     NAME: 'Nombre',
     AGE: 'Idad',
     TEL: 'Teléfono',
-    EMAIL: 'Correo'
+    EMAIL: 'Correo',
+
+    LIBRARIES: "Bibliotecas"
   });
   $translateProvider.preferredLanguage('en');
 });

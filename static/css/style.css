@@ -10,12 +10,12 @@ body
 
 .mdx-text-primary
 {
-	color: #7AB900;
+	color: #438CC7;
 }
 
 .mdx-button-primary
 {
-	background-color: #7AB900;
+	background-color: #438CC7;
 }
 
 .mdx-button-primary:focus, .mdx-button-primary :hover
@@ -25,7 +25,7 @@ body
 
 .mdx-navbar
 {
-	background-color:#7AB900;
+	background-color:#438CC7;
 }
 
 .mdx-footer
@@ -34,7 +34,7 @@ body
 }
 
 .dropdown-content li>a, .dropdown-content li>span {
-	color:#7AB900;
+	color:#438CC7;
 }
 
 .mdx-me-centered
