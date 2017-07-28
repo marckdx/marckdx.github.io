@@ -17,8 +17,8 @@
   <link rel="apple-touch-icon-precomposed" sizes="128x128" href="app/assets/images/icon-128x128.png">
 
 
-  <meta name="description" content="Marco Aurélio - Desenvolvedor .Net, Android e PHP">
-  <meta name="keywords" content="Desenvolvedor MarckDX Site Sistemas">
+  <meta name="description" content="MateSQL">
+  <meta name="keywords" content="ORM MySQL .Net">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -66,7 +66,7 @@
             <a class="nav-link" ng-class="{active: activetab == '/curriculo'}"  href="#/curriculo">Currículo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" ng-class="{active: activetab == '/contato'}" target="_blank" href="https://goo.gl/i8mwSp">Contato</a>
+            <a class="nav-link" ng-class="{active: activetab == '/contato'}"  href="#/contato">Contato</a>
           </li>
         </ul>
         <form class="form-inline ml-md-4 my-sm-0" action="https://github.com/marckdx">
@@ -76,7 +76,76 @@
     </div>
   </nav>
 
-  <div ng-view></div>
+<div class="section text-center py-5 bg-project text-white" nostyle="background: linear-gradient(to bottom, #009ed3, #008ebd ); 
+ " style="">
+    <div class="container">
+      <div class="row"> </div>
+      <div class="row">
+        <div class="col-lg-6 py-5 text-left">
+          <style>
+            .code {
+              background-color: #FFFFFF;
+              border-radius: 12px;
+              padding: 10px;
+              color: #323232;
+              font-size: 20px;
+            }
+
+            .token.comment,
+            .token.prolog,
+            .token.doctype,
+            .token.cdata {
+              color: #2A7F55!important;
+            }
+
+            .token.class {
+              color: #2AA2D5;
+            }
+
+            .token.none {
+              color: #323232;
+            }
+
+            .token.new {
+              color: #002AFD;
+            }
+          </style>
+          <div class="code  language-csharp jumbotron jumbotron-fluid">
+            <p> <span class="token comment" spellcheck="true">
+                /*   
+                 * Create a powerful application without SQLCommands
+                 */
+              </span>
+              <br> <span class="token class">User</span>&nbsp;<span class="token none">User&nbsp;=</span> <span class="token new">new</span> <span class="token none">User();</span>
+              <br> <span class="token class">DBConfig</span>&nbsp;<span class="token none">Conf =</span><span class="token new">new</span>&nbsp;<span class="token none">DBConfig();</span>
+              <br> <span class="token none">User.SetDbConfig(Conf);</span>
+              <br> <span class="token class">List</span>‹<span class="token class">User</span>›&nbsp;Users&nbsp;=&nbsp;User.Select‹User›();
+              <br> </p>
+          </div>
+        </div>
+        <div class="col-lg-6 py-5">
+          <h1 class="text-xs-center my-4 text-uppercase display-1" style=";line-height:1.5" data-writefull-timeout="null">MateSQL</h1>
+          <h1 class="text-xs-center display-2" style=";line-height:1.5" data-writefull-timeout="null">ORM MySQL e .Net</h1>
+          <div class="btn-group"> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-project">FEITO PARA <b>POUPAR TEMPO</b></h1>
+          <p class="lead">Chega de ficar construindo queries gigantescas que são difíceis para fazer a manutenção, foque no que é importante, lógica de negócio.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <a href="https://github.com/marckdx/matesql" class="btn btn-lg btn-project active text-uppercase my-4">ver documentação completa</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
  
   <div class="bt-1 py-5 bg-project text-center text-md-left">
