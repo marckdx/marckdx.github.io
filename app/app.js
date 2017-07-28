@@ -28,3 +28,10 @@ app.config(function($routeProvider, $locationProvider)
    // caso não seja nenhum desses, redirecione para a rota '/'
    .otherwise ({ redirectTo: '/' });
 });
+
+$(document).load(function(){
+      //Escrevendo cookie para controle de sessão
+     if(readCookie("mdx_section")==null){
+         writeCookie("mdx_section", makeid());
+     }
+});
