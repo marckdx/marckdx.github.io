@@ -18,5 +18,8 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "index.html?utm_source=webmanifest&utm_medium=default&utm_content=noads"
+  "start_url": "index.html?utm_source=webmanifest&utm_medium=default&utm_content=noads",
+  "display":"standalone",
+  "theme_color":"#343A41",
+  "orientation":"landscape"
 }
