@@ -31,7 +31,7 @@ app.config(function($routeProvider, $locationProvider)
 
 $( document ).ready(function() {
       //Escrevendo cookie para controle de sessão
-     if(readCookie("mdx_section")==null){
+     if(readCookie("mdx_session")==null){
          writeCookie("mdx_section", makeid());
      }
 });
