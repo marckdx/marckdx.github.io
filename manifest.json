@@ -1,22 +1,22 @@
 {
-  "short_name": "AirHorner",
-  "name": "Kinlan's AirHorner of Infamy",
+  "short_name": "MarckDX",
+  "name": "Marco Aurélio Lima",
   "icons": [
     {
-      "src": "launcher-icon-1x.png",
+      "src": "app/assets/images/icon-48x48.png",
       "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "launcher-icon-2x.png",
+      "src": "app/assets/images/icon-96x96.png",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "launcher-icon-4x.png",
+      "src": "app/assets/images/icon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     }
   ],
-  "start_url": "index.html?launcher=true"
+  "start_url": "index.html?utm_source=webmanifest&utm_medium=default&utm_content=noads"
 }
