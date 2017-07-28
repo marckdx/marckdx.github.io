@@ -34,4 +34,18 @@ $( document ).ready(function() {
      if(readCookie("mdx_session")==null){
          writeCookie("mdx_section", makeid());
      }
+
+     /* Registrando o ServiceWorker no navegador*/
+     if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/worker.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }).catch(function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
+
 });
