@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="app">
+<html ng-app="app" lang="pt-br">
   <head>
   <base href="/">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -15,6 +15,9 @@
   <link rel="icon" sizes="128x128" href="app/assets/images/icon-128x128.png">
   <link rel="apple-touch-icon" sizes="128x128" href="app/assets/images/icon-128x128.png">
   <link rel="apple-touch-icon-precomposed" sizes="128x128" href="app/assets/images/icon-128x128.png">
+  <meta name="theme-color" content="#343A41">
+
+
 
 
   <meta name="description" content="Marco Aurélio - Desenvolvedor .Net, Android e PHP">
@@ -23,8 +26,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   
-  <link href="app/assets/css/theme.css" media="all" rel="stylesheet" type="text/css">
-  <link href="app/assets/css/app.css" media="all" rel="stylesheet" type="text/css">
+  <link href="app/assets/css/theme.min.css" media="all" rel="stylesheet" type="text/css">
+  <link href="app/assets/css/app.min.css" media="all" rel="stylesheet" type="text/css">
 
   <link href="https://fonts.googleapis.com/css?family=Lato:400,200,300" rel="stylesheet" type="text/css">
 
@@ -66,7 +69,7 @@
             <a class="nav-link" ng-class="{active: activetab == '/curriculo'}"  href="#/curriculo">Currículo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" ng-class="{active: activetab == '/contato'}" target="_blank" href="https://goo.gl/i8mwSp">Contato</a>
+            <a class="nav-link" ng-class="{active: activetab == '/contato'}" rel="noopener" target="_blank" href="https://goo.gl/i8mwSp">Contato</a>
           </li>
         </ul>
         <form class="form-inline ml-md-4 my-sm-0" action="https://github.com/marckdx">
@@ -120,10 +123,10 @@
               <h6 class="mb-1 text-white  m-0"><b>Connectar</b></h6>
               <ul class="list-unstyled  text-white">
                 <li>
-                  <a href="https://twitter.com/mdxme" target="_blank">Twitter</a>
+                  <a href="https://twitter.com/mdxme" rel="noopener" target="_blank">Twitter</a>
                 </li>
                 <li>
-                  <a href="http://github.com/marckdx" target="_blank">GitHub</a>
+                  <a href="http://github.com/marckdx" rel="noopener" target="_blank">GitHub</a>
                 </li>
                 <li>
                   <a href="mailto:marckdx@outlook.com">Email</a>
@@ -143,7 +146,7 @@
   </div>
 
  <script src="app/assets/js/compressed.min.js"></script>
-  <script src="https://marckdx.github.io/api/js/spectrum.js"></script>
+  <script src="https://marckdx.github.io/api/js/spectrum.min.js"></script>
   <script src="app/app.js"></script>
   <script src="app/controllers/controllers.js"></script>
 
