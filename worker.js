@@ -10,13 +10,13 @@ var urlsToCache = [
   '/app/assets/images/noimage.min.png',
   '/app/assets/css/font-awesome.min.css',
   '/app/assets/fonts/fontawesome-webfont.eot',
-  '/app/assets/fonts/fonts/fontawesome-webfont.woff2',
+  '/app/assets/fonts/fontawesome-webfont.woff2',
   '/api/js/spectrum.min.js',
   'app/assets/css/font-lato.min.css',
-  '/app/assets/fonts/fonts/dPJ5r9gl3kK6ijoeP1IRsvY6323mHUZFJMgTvxaG2iE.woff2',
-  '/app/assets/fonts/fonts/EsvMC5un3kjyUhB9ZEPPwg.woff2',
-  '/app/assets/fonts/fonts/UyBMtLsHKBKXelqf4x7VRQ.woff2',
-  '/app/assets/fonts/fonts/1YwB1sO8YE1Lyjf12WNiUA.woff2'
+  '/app/assets/fonts/dPJ5r9gl3kK6ijoeP1IRsvY6323mHUZFJMgTvxaG2iE.woff2',
+  '/app/assets/fonts/EsvMC5un3kjyUhB9ZEPPwg.woff2',
+  '/app/assets/fonts/UyBMtLsHKBKXelqf4x7VRQ.woff2',
+  '/app/assets/fonts/1YwB1sO8YE1Lyjf12WNiUA.woff2'
 ];
 
 self.addEventListener('install', function(event) {
