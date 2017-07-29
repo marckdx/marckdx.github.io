@@ -7,7 +7,11 @@ var urlsToCache = [
   '/app/assets/css/theme.min.css',
   '/app/assets/js/compressed.min.js',
   '/app/assets/js/base.min.js',
-  '/app/assets/images/noimage.min.png'
+  '/app/assets/images/noimage.min.png',
+  '/app/assets/css/font-awesome.min.css',
+  '/app/assets/fonts/fontawesome-webfont.eot',
+  '/app/assets/fonts/fonts/fontawesome-webfont.woff2',
+  '/api/js/spectrum.min.js'
 ];
 
 self.addEventListener('install', function(event) {
