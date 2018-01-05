@@ -1,0 +1,154 @@
+<!doctype html>
+<html ng-app="app" lang="pt-br">
+  <head>
+  <meta charset="utf-8">
+  <base href="/">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="content-language" content="pt-br" />
+  <link rel="icon" href="app/assets/images/icon-16x16.png">
+  <title>MarckDX - Desenvolvedor</title>
+  
+  <link rel="manifest" href="manifest.json">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Google Chrome WebApp Tags -->
+  <link rel="icon" sizes="256x256" href="app/assets/images/icon-256x256.webp">
+  <link rel="icon" sizes="128x128" href="app/assets/images/icon-128x128.webp">
+  <link rel="apple-touch-icon" sizes="128x128" href="app/assets/images/icon-128x128.webp">
+  <link rel="apple-touch-icon-precomposed" sizes="128x128" href="app/assets/images/icon-128x128.webp">
+  <meta name="theme-color" content="#343A41">
+
+  <meta name="description" content="Marco Aurélio - Desenvolvedor .Net, Android e PHP">
+  <meta name="keywords" content="Desenvolvedor MarckDX Site Sistemas">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="app/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" async>
+  
+  <link href="app/assets/css/theme.min.css" media="all" rel="stylesheet" type="text/css">
+  <link href="app/assets/css/app.min.css" media="all" rel="stylesheet" type="text/css">
+
+  <link href="app/assets/css/font-lato.min.css" rel="stylesheet" type="text/css" async>
+
+  <link rel="web-socket" href="wss://marckdx.ddns.net/ws">
+
+  <meta name="robots" content="follow">
+
+  <!-- Bing Tracking Id !-->
+  <meta name="msvalidate.01" content="81A61F0ABBF622BCAF2292F9DF0B03A2" />
+  
+  <!-- Google Analytics Tracking Script -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102604830-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body class="text-center">
+  <nav class="navbar navbar-inverse navbar-full navbar-expand-md nav-project fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/"><b>Marco Aurélio</b></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link" ng-class="{active: activetab == '/'}" href="#/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" ng-class="{active: activetab == '/curriculo'}"  href="#/curriculo">Currículo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" ng-class="{active: activetab == '/contato'}" rel="noopener" href="#/contato">Contato</a>
+          </li>
+        </ul>
+        <form class="form-inline ml-md-4 my-sm-0" action="https://github.com/marckdx">
+          <button class="mx-auto mx-md-0 btn btn-outline-success" type="submit"><i class=" fa fa-github fa-fw"></i>GitHub</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div ng-view></div>
+
+ 
+  <div class="bt-1 py-5 bg-project text-center text-md-left">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <p class="mt-1 lead  text-white">Este site também é um <i class="fa fa-android"></i> Progressive Web App, enjoy! 
+            <br></p>
+        </div>
+        <div class="col-md-8 ">
+          <div class="row">
+            <div class="col-md-4  ">
+              <h6 class="mb-1  text-white  m-0"><b>Serviços</b></h6>
+              <ul class="list-unstyled text-white">
+                <li>
+                  <a href="#/manutencao">Manutenção</a>
+                </li>
+                <li>
+                  <a href="#/sistemas">Sistemas</a>
+                </li>
+                <li>
+                  <a href="#/consultoria">Consultoria</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 ">
+              <h6 class="mb-1 text-white  m-0"><b>Profisional</b></h6>
+              <ul class="list-unstyled  text-white">
+                <li>
+                  <a href="#/curriculo">Curriculo</a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com/in/marckdx">Linkedin</a>
+                </li>
+                <li>
+                  <a href="#/colaborar">Como colaborar</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 ">
+              <h6 class="mb-1 text-white  m-0"><b>Connectar</b></h6>
+              <ul class="list-unstyled  text-white">
+                <li>
+                  <a href="https://twitter.com/mdxme" rel="noopener" target="_blank">Twitter</a>
+                </li>
+                <li>
+                  <a href="http://github.com/marckdx" rel="noopener" target="_blank">GitHub</a>
+                </li>
+                <li>
+                  <a href="mailto:marckdx@outlook.com">Email</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-white">
+        <div class="col-md-12">
+          <p class="text-white text-center">
+            <br>Feito com muito <i class="fa fa-heart"></i> desde 2012 @MarckDX - <a href="https://www.mozilla.org/en-US/contribute/" class="text-white">Be a Moz://a too!</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <script src="app/assets/js/compressed.min.js"></script>
+  <script src="api/js/spectrum.min.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/controllers/controllers.js"></script>
+
+
+</body>
+
+</html>

@@ -2,30 +2,49 @@ var app = angular.module('app',['ngRoute']);
 
 app.config(function($routeProvider, $locationProvider)
 {
-   // remove o # da url
-   $locationProvider.html5Mode(true);
+   $locationProvider.html5Mode(true).hashPrefix('!');;
+
+   /*$locationProvider.html5Mode({
+    enabled:true
+   });*/
 
    $routeProvider
 
-   // para a rota '/', carregaremos o template home.html e o controller 'HomeCtrl'
    .when('/', {
       templateUrl : 'app/views/home.html',
       controller     : 'HomeController',
    })
 
-   // para a rota '/sobre', carregaremos o template sobre.html e o controller 'SobreCtrl'
    .when('/curriculo', {
       templateUrl : 'app/views/curriculo.html',
       controller  : 'CurriculoController',
    })
 
-   // para a rota '/contato', carregaremos o template contato.html e o controller 'ContatoCtrl'
    .when('/contato', {
       templateUrl : 'app/views/contato.html',
       controller  : 'ContatoController',
    })
 
-   // caso não seja nenhum desses, redirecione para a rota '/'
+   .when('/manutencao', {
+      templateUrl : 'app/views/manutencao.html',
+      controller  : 'ManutencaoController',
+   })
+
+   .when('/sistemas', {
+      templateUrl : 'app/views/sistemas.html',
+      controller  : 'SistemasController',
+   })
+
+   .when('/consultoria', {
+      templateUrl : 'app/views/consultoria.html',
+      controller  : 'ConsultoriaController',
+   })
+
+   .when('/colaborar', {
+      templateUrl : 'app/views/colaborar.html',
+      controller  : 'ColaborarController',
+   })
+
    .otherwise ({ redirectTo: '/' });
 });
 
