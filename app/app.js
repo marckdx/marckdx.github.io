@@ -1,0 +1,1 @@
+angular.module("appMarckDX",  ["chart.js", "angularUtils.directives.dirPagination"]);
