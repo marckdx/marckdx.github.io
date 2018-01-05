@@ -1,0 +1,36 @@
+{
+  "short_name": "MarckDX",
+  "name": "Marco Aurélio Lima",
+  "icons": [
+    {
+      "src": "assets/images/icon-48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "assets/images/icon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "assets/images/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/images/icon-256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "assets/images/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html",
+  "display":"standalone",
+  "theme_color":"#35879A",
+  "orientation":"portrait",
+  "background_color": "#ffffff"
+}
